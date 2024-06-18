@@ -24,7 +24,13 @@ builder.Services.ConfigureHttpClientDefaults(
     )
 );
 
-builder.AddOllamaChatCompletion(modelId: "llama3", baseUrl: "http://localhost:11434");
+#pragma warning disable SKEXP0010 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
+builder.AddOpenAIChatCompletion(
+  modelId: "llama3-70b-8192",
+  endpoint: new Uri("https://api.groq.com/openai/v1/chat/completions"),
+  apiKey: ""
+);
+#pragma warning restore SKEXP0010 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
 
 var kernel = builder.Build();
 
@@ -42,7 +48,8 @@ Provide the most accurate and honest answer to the user's question:
 while (true)
 {
   try {
-    logger.LogInformation("Bot: How can I help you today?");
+    Console.WriteLine("      Bot: How can I help you today?");
+    Console.Write("      User: ");
     var input = Console.ReadLine();
     
     if (string.IsNullOrWhiteSpace(input))
@@ -50,8 +57,8 @@ while (true)
       continue;
     }
 
-    logger.LogInformation("Sure thing! Let me think...");
-    logger.LogInformation("Bot: {Response}", await kernel.InvokePromptAsync(promptTemplate, new KernelArguments { { "input", input } }));
+    Console.WriteLine("      Bot: Sure thing! Let me think...");
+    Console.WriteLine("      Bot: {0}", await kernel.InvokePromptAsync(promptTemplate, new KernelArguments { { "input", input } }));
   }
   catch (Exception ex)
   {

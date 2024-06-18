@@ -5,6 +5,10 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OllamaTest", "OllamaTest\OllamaTest.csproj", "{9C053D04-4C6C-4AE7-85EB-77951EA52A7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChromaTest", "ChromaTest\ChromaTest.csproj", "{55F8827E-02D7-4817-99E9-2929A102D102}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FAQGenerationTest", "FAQGenerationTest\FAQGenerationTest.csproj", "{35A684DD-F1C5-4C99-94A0-0C27B254235D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{9C053D04-4C6C-4AE7-85EB-77951EA52A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C053D04-4C6C-4AE7-85EB-77951EA52A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C053D04-4C6C-4AE7-85EB-77951EA52A7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55F8827E-02D7-4817-99E9-2929A102D102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55F8827E-02D7-4817-99E9-2929A102D102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55F8827E-02D7-4817-99E9-2929A102D102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55F8827E-02D7-4817-99E9-2929A102D102}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35A684DD-F1C5-4C99-94A0-0C27B254235D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35A684DD-F1C5-4C99-94A0-0C27B254235D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35A684DD-F1C5-4C99-94A0-0C27B254235D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35A684DD-F1C5-4C99-94A0-0C27B254235D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

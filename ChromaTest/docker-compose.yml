@@ -1,0 +1,6 @@
+version: '3.8'
+services:
+  chroma:
+    image: chromadb/chroma
+    ports:
+      - "3111:8000"
